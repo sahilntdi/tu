@@ -1,15 +1,19 @@
-import Component from "../header"
+import Header from "../header"
 import HeroSection from "../hero-section"
 import AboutSection from "../about-section"
 import PodcastSection from "../podcast-section"
+import PhotoshootSection from "../photoshoot-section"
+import LiveStreamingSection from "../live-streaming-section"
 
-export default function Page() {
+export default function Home() {
   return (
-    <div className="bg-slate-800">
-      <Component />
+    <main className="min-h-screen">
+      <Header />
       <HeroSection />
       <AboutSection />
       <PodcastSection />
-    </div>
+      <PhotoshootSection />
+      <LiveStreamingSection />
+    </main>
   )
 }

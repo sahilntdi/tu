@@ -67,7 +67,7 @@ export default function Component() {
         <div className="flex items-center group cursor-pointer">
           <h1 className="text-white text-xl sm:text-2xl font-bold tracking-wide transition-all duration-300 group-hover:scale-105">
             TUSSLE
-            <span className="block text-white text-xl sm:text-2xl font-light tracking-wider border-2 border-white px-1 sm:px-2 py-1 ml-0 mt-1 inline-block transition-all duration-300 group-hover:border-red-500 group-hover:text-red-500">
+            <span className="block text-white text-xl sm:text-2xl font-light tracking-wider border-2 border-white px-1 sm:px-2 py-1 ml-0 mt-1 inline-block transition-all duration-300 group-hover:border-[#DC2751] group-hover:text-[#DC2751]">
               STUDIO
             </span>
           </h1>
@@ -79,13 +79,13 @@ export default function Component() {
             <Link
               key={index}
               href={item.href}
-              className="text-white hover:text-red-400 transition-all duration-300 flex items-center gap-2 group relative overflow-hidden px-2 py-1"
+              className="text-white hover:text-[#DC2751] transition-all duration-300 flex items-center gap-2 group relative overflow-hidden px-2 py-1"
             >
               <span className="relative z-10 transition-transform duration-300 group-hover:translate-x-1 text-sm xl:text-base">
                 {item.name}
               </span>
-              <span className="w-2 h-2 bg-red-500 rounded-full transition-all duration-300 group-hover:scale-125 group-hover:bg-red-400"></span>
-              <div className="absolute inset-0 bg-red-500/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded"></div>
+              <span className="w-2 h-2 bg-[#DC2751] rounded-full transition-all duration-300 group-hover:scale-125 group-hover:bg-[#DC2751]"></span>
+              <div className="absolute inset-0 bg-[#DC2751]/10 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded"></div>
             </Link>
           ))}
         </nav>
@@ -93,7 +93,7 @@ export default function Component() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMobileMenu}
-          className="lg:hidden text-white hover:text-red-400 transition-colors duration-300 p-2"
+          className="lg:hidden text-white hover:text-[#DC2751] transition-colors duration-300 p-2"
           aria-label="Toggle mobile menu"
         >
           {isMobileMenuOpen ? (
@@ -116,7 +116,7 @@ export default function Component() {
               key={index}
               href={item.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="flex items-center justify-between text-white hover:text-red-400 hover:bg-slate-700 transition-all duration-300 px-4 py-3 rounded-lg group"
+              className="flex items-center justify-between text-white hover:text-[#DC2751] hover:bg-slate-700 transition-all duration-300 px-4 py-3 rounded-lg group"
               style={{
                 animationDelay: `${index * 100}ms`,
               }}
@@ -124,7 +124,7 @@ export default function Component() {
               <span className="text-base font-medium transition-transform duration-300 group-hover:translate-x-2">
                 {item.name}
               </span>
-              <span className="w-2 h-2 bg-red-500 rounded-full transition-all duration-300 group-hover:scale-125 group-hover:bg-red-400"></span>
+              <span className="w-2 h-2 bg-[#DC2751] rounded-full transition-all duration-300 group-hover:scale-125 group-hover:bg-[#DC2751]"></span>
             </Link>
           ))}
         </nav>
